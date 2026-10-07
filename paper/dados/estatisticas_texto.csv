@@ -1,0 +1,18 @@
+chave,motor,valor
+pct_seldepth_menor_que_depth_1000,Stockfish 17.1,3.2
+pct_seldepth_menor_que_depth_1000,Stockfish 16.1,60.1
+n_posicoes_degrau_comum,ambos,131493.0
+pct_mesmo_melhor_lance,ambos,76.8
+pct_mesmo_melhor_lance_diverg_le15,ambos,80.9
+pct_mesmo_melhor_lance_diverg_gt100,ambos,59.5
+pct_sinal_oposto,ambos,0.9
+pct_valor_identico,ambos,4.3
+diverg_q75,ambos,35.0
+diverg_q90,ambos,70.0
+diverg_q99,ambos,157.0
+pct_diverg_gt100,ambos,4.8
+pct_diverg_gt200,ambos,0.4
+diverg_mediana_abscp_le50,Stockfish 17.1,6.0
+diverg_mediana_abscp_gt600,Stockfish 17.1,77.0
+n_abscp_le50,Stockfish 17.1,21422.0
+settle_dev_mediana_abscp_le50,Stockfish 17.1,39.0

@@ -1,0 +1,3 @@
+motor,n,sign_flips_media,pct_sign_flips_ge1,pct_sign_flips_ge2,cp_range_mediana,cp_range_p90,cp_range_media,settle_dev_mediana,settle_dev_p90,settle_dev_media,pct_settle_dev_gt100,posicoes_com_mate,diverg_mediana,diverg_p90,diverg_media,pct_diverg_gt50,pct_diverg_gt200
+Stockfish 16.1,131493,0.097,7.84,1.6,60.0,162.0,83.0,53.0,159.0,77.2,22.37,2316,15.0,70.0,27.6,16.12,0.36
+Stockfish 17.1,131493,0.116,8.35,2.64,69.0,182.0,91.9,60.0,178.0,84.8,27.08,1958,15.0,70.0,27.6,16.12,0.36

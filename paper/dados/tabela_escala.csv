@@ -1,0 +1,3 @@
+motor,sha256_8,threads,hash_mb,partidas,posicoes,avaliacoes,posicoes_escada_completa,linhas_metricas,nos_total,cpu_horas_motor,tamanho_arquivo_mb
+Stockfish 17.1,7fecbc0b,1,16,2000,131493,920451,131493,262986,701778063403,621.2,97.0
+Stockfish 16.1,01a8cbe2,1,16,2000,131493,794767,131493,262986,199508922038,201.8,97.0

@@ -1,0 +1,3 @@
+motor,de,para,n,pct_abs_delta_gt20,pct_abs_delta_gt50,pct_abs_delta_gt100,abs_delta_mediana,abs_delta_p90,pct_melhor_lance_mudou,pct_inversao_sinal,mates_novos
+Stockfish 17.1,256000,1000000,5683,26.99,5.95,1.13,11.0,40.0,16.03,1.07,21
+Stockfish 16.1,256000,1000000,5683,21.34,3.64,1.14,9.0,31.0,16.0,0.77,32

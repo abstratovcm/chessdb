@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="640" viewBox="0 0 1400 640" font-family="Arial, Liberation Sans, sans-serif" font-size="22">
+  <defs>
+    <marker id="seta" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#000"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="640" fill="#fff"/>
+
+  <!-- Faixa Colab -->
+  <rect x="30" y="30" width="900" height="360" rx="14" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="10,8"/>
+  <text x="50" y="60" font-size="18" font-weight="bold">Sessão Google Colab (8 vCPU, até 8 h) · shard k de N</text>
+
+  <!-- Gerador -->
+  <rect x="60" y="100" width="230" height="140" rx="10" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="175" y="135" text-anchor="middle" font-weight="bold">Gerador de posições</text>
+  <text x="175" y="165" text-anchor="middle" font-size="18">partidas com semente</text>
+  <text x="175" y="190" text-anchor="middle" font-size="18">amostragem MultiPV</text>
+  <text x="175" y="215" text-anchor="middle" font-size="18">filtro |cp| ≤ 800, sem mate</text>
+
+  <!-- Orquestrador -->
+  <rect x="350" y="100" width="250" height="140" rx="10" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="475" y="135" text-anchor="middle" font-weight="bold">Orquestrador</text>
+  <text x="475" y="165" text-anchor="middle" font-size="18">trabalho pendente por anti-join</text>
+  <text x="475" y="190" text-anchor="middle" font-size="18">posições × motor × degrau</text>
+  <text x="475" y="215" text-anchor="middle" font-size="18">retoma após queda</text>
+
+  <!-- Workers -->
+  <rect x="660" y="100" width="240" height="140" rx="10" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="780" y="135" text-anchor="middle" font-weight="bold">Pool de motores</text>
+  <text x="780" y="165" text-anchor="middle" font-size="18">Stockfish 17.1 / 16.1 (UCI)</text>
+  <text x="780" y="190" text-anchor="middle" font-size="18">Threads = 1, Hash = 16 MB</text>
+  <text x="780" y="215" text-anchor="middle" font-size="18">escada de nós 1 k → 4 M</text>
+
+  <!-- SQLite local -->
+  <rect x="350" y="280" width="250" height="90" rx="10" fill="#f2f2f2" stroke="#000" stroke-width="2"/>
+  <text x="475" y="313" text-anchor="middle" font-weight="bold">SQLite local</text>
+  <text x="475" y="343" text-anchor="middle" font-size="18">games · positions · evals</text>
+
+  <!-- Drive -->
+  <rect x="990" y="100" width="230" height="140" rx="10" fill="#f2f2f2" stroke="#000" stroke-width="2"/>
+  <text x="1105" y="135" text-anchor="middle" font-weight="bold">Google Drive</text>
+  <text x="1105" y="165" text-anchor="middle" font-size="18">checkpoint a cada 5 min</text>
+  <text x="1105" y="190" text-anchor="middle" font-size="18">s0ofN/ · s1ofN/ · raiz</text>
+  <text x="1105" y="215" text-anchor="middle" font-size="18">nunca aberto no Drive</text>
+
+  <!-- Merge -->
+  <rect x="990" y="280" width="230" height="90" rx="10" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="1105" y="313" text-anchor="middle" font-weight="bold">chessdb merge</text>
+  <text x="1105" y="343" text-anchor="middle" font-size="18">união por chave natural</text>
+
+  <!-- Canônico -->
+  <rect x="990" y="420" width="230" height="90" rx="10" fill="#f2f2f2" stroke="#000" stroke-width="2"/>
+  <text x="1105" y="453" text-anchor="middle" font-weight="bold">Banco canônico</text>
+  <text x="1105" y="483" text-anchor="middle" font-size="18">+ position_metrics (v1, v2)</text>
+
+  <!-- Métricas -->
+  <rect x="660" y="420" width="240" height="90" rx="10" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="780" y="453" text-anchor="middle" font-weight="bold">chessdb metrics</text>
+  <text x="780" y="483" text-anchor="middle" font-size="18">instabilidade por posição</text>
+
+  <!-- Export / API -->
+  <rect x="350" y="420" width="250" height="90" rx="10" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="475" y="453" text-anchor="middle" font-weight="bold" font-size="20">DuckDB (somente leitura)</text>
+  <text x="475" y="483" text-anchor="middle" font-size="18">exportação Parquet · consultas</text>
+
+  <rect x="60" y="420" width="230" height="90" rx="10" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="175" y="453" text-anchor="middle" font-weight="bold" font-size="19">API FastAPI + site React</text>
+  <text x="175" y="483" text-anchor="middle" font-size="18">painel · explorador · filtros</text>
+
+  <!-- Setas -->
+  <line x1="290" y1="170" x2="348" y2="170" stroke="#000" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="600" y1="170" x2="658" y2="170" stroke="#000" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="604" y="160" font-size="15">tarefas</text>
+  <line x1="780" y1="240" x2="520" y2="280" stroke="#000" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="640" y="275" font-size="15">avaliações</text>
+  <line x1="475" y1="240" x2="475" y2="278" stroke="#000" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="175" y1="240" x2="380" y2="280" stroke="#000" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="200" y="275" font-size="15">posições + linhagem</text>
+  <line x1="600" y1="325" x2="988" y2="180" stroke="#000" stroke-width="2" marker-end="url(#seta)"/>
+  <text x="760" y="300" font-size="15">cópia (backup API)</text>
+  <line x1="1105" y1="240" x2="1105" y2="278" stroke="#000" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="1105" y1="370" x2="1105" y2="418" stroke="#000" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="988" y1="465" x2="902" y2="465" stroke="#000" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="658" y1="465" x2="602" y2="465" stroke="#000" stroke-width="2" marker-end="url(#seta)"/>
+  <line x1="348" y1="465" x2="292" y2="465" stroke="#000" stroke-width="2" marker-end="url(#seta)"/>
+
+  <text x="640" y="580" text-anchor="middle" font-size="18">Máquina local: merge, métricas, exportação e site (nenhuma escrita a partir do site)</text>
+  <rect x="30" y="400" width="1220" height="130" rx="14" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="10,8"/>
+</svg>

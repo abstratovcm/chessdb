@@ -1,0 +1,12 @@
+{
+  "url": "https://database.lichess.org/standard/lichess_db_standard_rated_2013-01.pgn.zst",
+  "games_read": 10000,
+  "parse_errors": 0,
+  "harvested": 502002,
+  "unique": 492056,
+  "sample": 6000,
+  "seed": 1,
+  "min_ply": 8,
+  "max_ply": 80,
+  "extracted_at": "2026-09-25"
+}
